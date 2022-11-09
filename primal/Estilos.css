@@ -1,0 +1,219 @@
+/********** Pedroza Moranchel Luis Fernando **********/
+
+@font-face {
+    font-family: "PrimalFont";
+    src: url("Primal\ Dream.ttf");
+}
+h4{
+    color: white;
+    font-family: PrimalFont;
+}
+h1{
+    color: white;
+    font-family: PrimalFont;
+}
+#fondo{ 
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+}
+/********** ENCABEZADO **********/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+}
+#logo{
+    align-items: center;
+}
+#logo img{
+    height: 70px;
+    padding: 10px;
+    transition: 0.5s;
+}
+#logo img:hover{
+    transform: scale(1.2);
+}
+#menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+#menu #seccion{
+    float:left;
+}
+#menu #seccion a{
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    display: inline-block;
+    font-family: PrimalFont;
+    font-size: 16px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+#menu #seccion a:hover{
+    color: rgb(202, 0, 0);
+    transform: scale(1.2);
+}
+/********** CUERPO INDEX **********/
+video{
+    width: 100%;
+    height: 550px;
+}
+#campos img{
+    float: left;
+    width: 500px;
+    height: 250px;
+}
+#info{
+    color: white;
+    font-family: PrimalFont;
+}
+/********** CUERPO PERSONAJES **********/
+#contenedor p{
+    font-family: PrimalFont;
+    color: white;
+    width: auto;
+    height: 310px;
+    justify-content: center;
+}
+#cartas{
+    width: 400px;
+    margin: 20px;
+    overflow: hidden;
+    text-align: center;
+    display: inline-block;
+    transition: 0.5s;
+}
+#cartas:hover{
+    transform: translateY(-20px);
+    background-color: rgb(31, 29, 29);
+    border-radius: 10px;
+}
+#cartas img{
+    width: 250px;
+    height: 250px;
+}
+/********** CUERPO EPISODIOS **********/
+#contenedorEP p{
+    font-family: PrimalFont;
+    color: white;
+    width: auto;
+    height: 100px;
+    justify-content: center;
+}
+#cartasEP{
+    width: 400px;
+    margin: 20px;
+    overflow: hidden;
+    text-align: center;
+    display: inline-block;
+    transition: 0.5s;
+}
+#cartasEP img{
+    width: 350px;
+    height: 150px;
+}
+#cartasEP:hover{
+    transform: translateY(-20px);
+    background-color: rgb(31, 29, 29);
+    border-radius: 10px;
+}
+/********** CUERPO EXTRAS **********/
+#cartasEX{
+    width: 400px;
+    margin: 20px;
+    overflow: hidden;
+    text-align: center;
+    display: inline-block;
+    transition: 0.5s;
+}
+legend{
+    color: white;
+    font-family: PrimalFont;
+}
+/********** CUERPO PERFIL **********/
+#contenedorUsuario{
+    width: 99%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid rgb(10, 10, 12);
+    border-radius: 15px;
+}
+#contenidoUsuario{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 25%;
+    display: inline-block;
+    
+}
+#contenidoUsuario p{
+    color: white;
+    font-family: PrimalFont;
+    width: 1px;
+    height: 50px;
+}
+#contenidoUsuario a{
+    color: white;
+    font-family: PrimalFont;
+}
+#avatar img{
+    width: 100px;
+    height: 100px;
+    border: 7px solid rgb(255, 255, 255);
+    border-radius: 50%;
+}
+#datosUsuario input{
+    background-color: rgb(221, 221, 221);
+    font-family: PrimalFont;
+    font-weight:bolder;
+    height: 18px;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-top: 8px;
+}
+#datosUsuario button{
+    width: 90px;
+    height: 30px;
+    float: right;
+    background-color: rgb(221, 221, 221);
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: PrimalFont;
+    font-size: 15px;
+    font-weight:bolder;
+    transition: 0.5s;
+}
+#datosUsuario button:hover{
+    transform:translateY(-2px);
+}
+/********** PIE DE PAGINA **********/
+footer{
+    color:white;
+    position: relative;
+    bottom: 0;
+}
+#sociales{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+#sociales li{
+    list-style: none;
+}
+#sociales li a{
+    font-size: 3em;
+    color: white;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+#sociales li a:hover{
+    color: rgb(202, 0, 0);
+    transform: scale(1.2);
+}
