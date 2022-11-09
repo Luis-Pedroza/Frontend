@@ -1,0 +1,150 @@
+/********** REPRODUCTOR DE AUDIO **********
+********** By Pedroza Moranchel Luis Fernando ********** */
+
+body{
+    margin: 0;
+    background-image: linear-gradient(to right bottom, #9ad5ca, #74aea2, #4f887c, #2b6458, #004236);
+}
+header{
+    text-align: center
+}
+header h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    font-weight: bolder;
+    color: #004236;
+}
+#contenedor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/********** REPRODUCTOR ***********/
+.ventana{
+    justify-content: center;
+    width: 350;
+    height: 500px;
+    margin: 50px;
+    margin-top: 0;
+}
+#reproductor{
+    background-color: #4f887c;
+    box-shadow: 4px 4px 10px #2b6458;
+    height: 500px;
+    border-radius: 9%;
+}
+/* ********** LISTA DE CANCIONES ********** */
+#menu{
+    float: right;
+}
+#menu_canciones{
+    background-color: #4f887c;
+    box-shadow: 4px 4px 10px #2b6458;
+    height: 500px;
+    width: 350px;
+    border-radius: 9%;
+}
+#ventana_lista{
+    display: none;
+}
+.contenedor_cancion{
+    display: flex;
+    justify-content: center;
+}
+.lista_canciones{
+    display: flex;
+    margin-top: 20px;
+    width: 300px;
+    height: 95px;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 4px 4px 10px #2b6458;
+}
+.lista_canciones img{
+    margin: 10px;
+    width: 70px;
+    height: 70px;
+    box-shadow: 4px 4px 10px #2b6458;
+}
+.lista_canciones .boton{
+    margin: 15px;
+}
+/* ********** IMAGEN ********** */
+#imagen{
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 200px;
+    margin-bottom: 40px;
+}
+#imagen img{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 4px 4px 10px #2b6458;
+}
+/* ********** INFO DE CANCION ********** */
+#info{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+/* ********** VOL, PROGRESO, TIEMPO ********** */
+#progreso{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+#OFF{
+    display: none;
+}
+#barra{
+    display: flex;
+    background-color: #9ad5ca;
+    width: 60%;
+    margin-top: 13px;
+    height: 15px;
+    border-radius: 10px;
+}
+#tiempo{
+    display: flex;
+    background-color: #004236;
+    width: 0;
+    height: 100%;
+    border-radius: 10px;
+}
+#duracion {
+    margin-top: 13px;
+    font-weight: bold;
+}
+/* ********** CONTROLES ********** */
+#controles{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+    margin-top: 5px;
+}
+.boton{
+    background-color: #4f887c;
+    color: black;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+}
+.boton :hover{
+    color: #004236;
+}
+#pause{
+    display: none;
+}
+/* ********** PHONE ********** */
+@media (max-width:600px){
+    body{
+        background-color: black;
+    }
+
+}

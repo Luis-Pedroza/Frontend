@@ -1,0 +1,140 @@
+<!-- ********** REPRODUCTOR DE AUDIO ********** -->
+<!-- ********** By Pedroza Moranchel Luis Fernando ********** -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Reproductor</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link rel="icon" href="icono.jpg">
+    <script type="text/javascript" src="funciones.js"></script>
+</head>
+<body>
+    <section>
+        <header>
+            <h1>MÚSICA</h1>
+        </header>
+        <div id="contenedor">
+            <!-- VENTANA DE REPRODUCTOR -->
+            <div class="ventana">
+                <div id="reproductor">
+                    <!-- BOTON LISTA DE CANCINES -->
+                    <div>
+                        <button class="boton" id="menu" onclick="mostrar_lista()">
+                            <ion-icon name="menu"></ion-icon>
+                        </button>
+                    </div>
+                    <!-- ********** IMAGEN ********** -->
+                    <div id="imagen">
+                        <img src="audio/uno.jpg" name=img alt="portada">
+                    </div>
+                    <!-- ********** INFO DE CANCION ********** -->
+                    <div id="info">
+                        <h2 id="cancion">New Gold</h2>
+                        <h4 id="autor">Gorillaz</h4>
+                        <audio id="audio" src="audio/uno.mp3" onplay="barra()">
+                            <source src="audio">
+                        </audio>
+                    </div>
+                    <!-- ********** VOL, PROGRESO, TIEMPO ********** -->
+                    <div id="progreso">
+                        <button class="boton" id="ON" onclick="OFF()">
+                            <ion-icon name="volume-high-outline"></ion-icon>
+                        </button>
+                        <button class="boton" id="OFF" onclick="ON()">
+                            <ion-icon name="volume-mute-outline"></ion-icon>
+                        </button>
+                        <div id="barra">
+                            <section id="tiempo"></section>
+                        </div>
+                        <div>
+                            <h4 id="duracion" onchange="escuchar()">0.00</h4>
+                        </div>
+                    </div>
+                    <!-- ********** CONTROLES ********** -->
+                    <div id="controles">
+                        <button class="boton" id="back" type="button" onclick="atras()">
+                            <ion-icon name="play-back"></ion-icon>
+                        </button>
+                        <button class="boton" id="play" type="button" onclick="reproducir()">
+                            <ion-icon name="play"></ion-icon>
+                        </button>
+                        <button class="boton" id="pause" onclick="pausar()">
+                            <ion-icon name="pause"></ion-icon>
+                        </button>
+                        <button class="boton" id="forward" onclick="adelante()">
+                            <ion-icon name="play-forward"></ion-icon>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- VENTANA LISTA DE CANCIONES -->
+            <div class="ventana" id="ventana_lista">
+                <div id="menu_canciones">
+                    <div class="contenedor_cancion">
+                        <div class="lista_canciones">
+                            <img src="audio/uno.jpg" name=img alt="portada">
+                            <div>
+                                <h4 id="cancion">New Gold</h4>
+                                <h6 id="autor">Gorillaz</h6>
+                            </div>
+                            <div>
+                                <a id="botonY0" class="boton" href="https://www.youtube.com/watch?v=S03T47hapAc&ab_channel=Gorillaz" target="_blank">
+                                    <ion-icon name="logo-youtube"></ion-icon>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contenedor_cancion">
+                        <div class="lista_canciones">
+                            <img src="audio/dos.jpg" name=img alt="portada">
+                            <div>
+                                <h4 id="cancion">Hanuman</h4>
+                                <h6 id="autor">Rodrigo y Grabriela</h6>
+                            </div>
+                            <div>
+                                <a id="botonY1" class="boton" href="https://www.youtube.com/watch?v=ENBX_v1Po1Y" target="_blank">
+                                    <ion-icon name="logo-youtube"></ion-icon>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contenedor_cancion">
+                        <div class="lista_canciones">
+                            <img src="audio/tres.jpg" name=img alt="portada">
+                            <div>
+                                <h4 id="cancion">Forever</h4>
+                                <h6 id="autor">Flight Facilities</h6>
+                            </div>
+                            <div>
+                                <a id="botonY2" class="boton" href="https://www.youtube.com/watch?v=LbDprMno3bo&ab_channel=FlightFacilities" target="_blank">
+                                    <ion-icon name="logo-youtube"></ion-icon>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contenedor_cancion">
+                        <div class="lista_canciones">
+                            <img src="audio/cuatro.jpg" name=img alt="portada">
+                            <div>
+                                <h4 id="cancion">Soldier, Poet, King</h4>
+                                <h6 id="autor">The Oh Hellos</h6>
+                            </div>
+                            <div>
+                                <a id="botonY3" class="boton" href="https://www.youtube.com/watch?v=1Kq0q2VSgrI&ab_channel=PasteMagazine" target="_blank">
+                                    <ion-icon name="logo-youtube"></ion-icon>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- ********** ICONOS DEL REPRODUCTOR ********* -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
