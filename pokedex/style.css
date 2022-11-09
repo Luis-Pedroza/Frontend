@@ -1,0 +1,323 @@
+body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+
+/********************************/
+/********** MAIN WINDOW *********/
+/********************************/
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(167, 34, 34);
+    border-left: rgb(117, 28, 28) solid 5px;
+    width: 250px;
+    height: 440px;
+    border-radius: 10px;
+}
+
+/********** LIGHTS *********/
+#mainLights {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    border-bottom: rgb(117, 28, 28) solid 5px;
+    border-bottom-right-radius: 80px;
+    margin-bottom: 25px;
+}
+
+#blueLight {
+    background-color: rgb(87, 157, 204);
+    border: rgb(0, 0, 0) solid 1px;
+    box-shadow: 2px 2px 2px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+#redLight {
+    background-color: rgb(189, 27, 27);
+    border: rgb(0, 0, 0) solid 1px;
+    box-shadow: 2px 2px 2px;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
+
+#yellowLight {
+    background-color: rgb(221, 201, 22);
+    border: rgb(0, 0, 0) solid 1px;
+    box-shadow: 2px 2px 2px;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+#greenLight {
+    background-color: rgb(44, 131, 23);
+    border: rgb(0, 0, 0) solid 1px;
+    box-shadow: 2px 2px 2px;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+/********** IMAGE *********/
+#mainImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: rgb(117, 117, 117) solid 15px;
+    border-bottom: rgb(117, 117, 117) solid 25px;
+    border-bottom-left-radius: 30px;
+    background-color: rgb(32, 30, 30);
+    width: 70%;
+    height: 40%;
+}
+
+#mainImage img {
+    width: 90%;
+    height: 90%;
+}
+
+/********** BUTTONS *********/
+#mainButtons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    height: 26%;
+}
+
+#buttonsLights {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 40%;
+}
+
+#buttonGrey {
+    background-color: rgb(51, 64, 73);
+    border: rgb(0, 0, 0) solid 1px;
+    box-shadow: 2px 2px 2px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+
+#buttonRed {
+    background-color: rgb(255, 0, 0);
+    border: rgb(0, 0, 0) solid 1px;
+    box-shadow: 2px 2px 2px;
+    width: 40px;
+    height: 7px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#buttonGreen {
+    background-color: rgb(44, 131, 23);
+    border: rgb(0, 0, 0) solid 1px;
+    box-shadow: 2px 2px 2px;
+    width: 40px;
+    height: 7px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+#buttonsRectangle {
+    background-color: rgb(47, 155, 25);
+    border: rgb(0, 0, 0) solid 1px;
+    box-shadow: 2px 2px 2px;
+    width: 50%;
+    height: 30%;
+    margin-left: 10px;
+}
+
+#buttonsCross {
+    width: 70px;
+    height: 70px;
+    margin-left: 20px;
+}
+
+#H {
+    position: absolute;
+    margin-top: 20px;
+    width: 70px;
+    height: 30px;
+    background-color: rgb(51, 64, 73);
+    border: rgb(0, 0, 0) solid 1px;
+    box-shadow: 2px 2px 2px;
+}
+
+#V {
+    position: absolute;
+    margin-left: 20px;
+    width: 30px;
+    height: 70px;
+    background-color: rgb(51, 64, 73);
+    border: rgb(0, 0, 0) solid 1px;
+    box-shadow: 2px 2px 2px;
+}
+
+/********************************/
+/********** INFORMATION *********/
+/********************************/
+#information {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(167, 34, 34);
+    border-left: rgb(117, 28, 28) solid 20px;
+    width: 250px;
+    height: 440px;
+    border-radius: 10px;
+}
+
+#informationCut {
+    background-color: white;
+    width: 100%;
+    height: 14%;
+    border-bottom: rgb(117, 28, 28) solid 5px;
+    border-bottom-left-radius: 80px;
+    margin-bottom: 20px;
+}
+
+/********** SCREEN *********/
+#informationScreen {
+    width: 80%;
+    padding-left: 15px;
+    background-color: rgb(77, 204, 51);
+    margin-bottom: 5px;
+    margin-left: 15px;
+}
+
+/********** SEARCH *********/
+#informationSearch {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 85%;
+    margin-left: 15px;
+}
+
+#tableButtons td {
+    background-color: rgb(0, 140, 255);
+    width: 30px;
+    height: 20px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px;
+}
+
+/********** BUTTONS *********/
+#informationMoreButtons {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoButtons {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.buttonCommand {
+    background-color: rgb(255, 255, 255);
+    width: 90px;
+    height: 30px;
+    margin: 2px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.infoButtonsRight {
+    background-color: rgb(51, 64, 73);
+    border: rgb(0, 0, 0) solid 1px;
+    box-shadow: 2px 2px 2px;
+    width: 40px;
+    height: 7px;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+#infoButtonsRight3 {
+    background-color: rgb(207, 196, 33);
+    border: rgb(0, 0, 0) solid 1px;
+    box-shadow: 2px 2px 2px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+.buttonBottom {
+    background-color: rgb(32, 30, 30);
+    width: 90px;
+    height: 30px;
+}
+
+/********************************/
+/************* COVER ************/
+/********************************/
+#cover {
+    position: absolute;
+}
+
+#coverCut {
+    background-color: rgb(167, 34, 34);
+    width: 240px;
+    height: 360px;
+    margin-top: 70px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+/********************************/
+/************* PHONE ************/
+/********************************/
+@media(max-width: 500px) {
+    #information {
+        position: absolute;
+        margin-top: 300px;
+        height: 360px;
+        border-left: rgb(117, 28, 28) solid 5px;
+        border-top: rgb(117, 28, 28) solid 5px;
+    }
+
+    #informationCut {
+        display: none;
+    }
+
+    #cover {
+        margin-right: 0;
+    }
+}

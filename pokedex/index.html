@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./pokeball.png">
+    <title>Pokedex</title>
+</head>
+
+<body>
+    <section id="main">
+        <div id="mainLights">
+            <div id="blueLight"></div>
+            <div id="redLight"></div>
+            <div id="yellowLight"></div>
+            <div id="greenLight"></div>
+        </div>
+        <div id="mainImage">
+            <img id="pokeImg" src="./pokeball.png" alt="pokemon">
+        </div>
+        <div id="mainButtons">
+            <div id="buttonsLights">
+                <div id="buttonGrey"></div>
+                <div id="buttonRed"></div>
+                <div id="buttonGreen"></div>
+            </div>
+            <div id="buttonsRectangle"></div>
+            <div id="buttonsCross">
+                <div id="H"></div>
+                <div id="V"></div>
+            </div>
+        </div>
+    </section>
+    <section id="information">
+        <div id="informationCut"></div>
+        <div id="informationScreen">
+            <p id="name">Name: </p>
+            <p id="abilities">Abilities: </p>
+            <p id="type">Type: </p>
+            <p id="weight">Weight: </p>
+        </div>
+        <div id="informationSearch">
+            <label for="search">Search</label>
+            <input type="text" name="search" placeholder="name" id="pokeName">
+            <table id="tableButtons">
+                <tr>
+                    <td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <td></td><td></td><td></td><td></td><td></td>
+                </tr>
+            </table>
+        </div>
+        <div id="informationMoreButtons">
+            <div class="infoButtons">
+                <div class="buttonCommand" onclick="fetchPokemon()">FETCH</div>
+                <div class="buttonBottom"></div>
+            </div>
+            <div class="infoButtons">
+                <div class="buttonCommand" onclick="hidePokedex()">CLOSE</div>
+                <div class="buttonBottom"></div>
+            </div>
+        </div>
+    </section>
+    <section id="cover">
+        <div id="coverCut" onclick="showPokedex()"></div>
+    </section>
+    <script src="./functions.js"></script>
+</body>
+
+</html>
