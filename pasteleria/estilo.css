@@ -1,0 +1,329 @@
+/* Pasteleria Tina's Cake*/
+/*By Pedroza Moranchel Luis Fernando*/
+body {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(255, 255, 255);
+    background-color: rgb(99, 99, 109);
+    padding: 0;
+    margin: 0;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url(./img/fondo.png);
+}
+
+body a {
+    color: rgb(255, 255, 255);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+header img{
+    position: absolute;
+    float: left;
+    width: 100px;
+}
+
+.barraNavegacion ul {
+    margin-left: 110px;
+    float: right;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    padding-bottom: 6px;
+}
+
+.barraNavegacion ul li {
+    margin: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.barraNavegacion ul li a {
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.barraNavegacion ul li:hover {
+    transform: scale(1.2);
+}
+
+.seccion {
+    width: 99%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/****************************/
+/* *******PRODUCTOS* ****** */
+/****************************/
+.contenedorProductos {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.listaProducto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    font-weight: bold;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.623);
+    border: rgba(0, 0, 0, 0.733) 3px solid;
+    border-radius: 20px;
+}
+
+.contenedorImagen img {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    transition: 0.5s;
+}
+
+.contenedorImagen img:hover {
+    transform: scale(1.2);
+}
+
+/*************************/
+/* *******PEDIDOS******* */
+/*************************/
+#formularioPedidos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#formularioPedidos ul {
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.623);
+    border: rgba(0, 0, 0, 0.733) 3px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 20px;
+    width: 300px;
+    border-radius: 20px;
+}
+
+#formularioPedidos li {
+    margin: 10px;
+    min-width: 250px;
+    max-width: 250px;
+    justify-content: center;
+}
+
+#formularioPedidos label {
+    float: left;
+}
+
+#formularioPedidos select {
+    cursor: pointer;
+    float: right;
+    width: 100px;
+    height: 25px;
+}
+
+#formularioPedidos #selectAdorno {
+    cursor: pointer;
+    float: right;
+    width: 20px;
+}
+
+#formularioPedidos input {
+    cursor: pointer;
+    float: right;
+    width: 90px;
+    height: 21px;
+}
+
+#formularioPedidos textarea {
+    resize: none;
+}
+
+#formularioPedidos button {
+    cursor: pointer;
+    width: 90px;
+    height: 25px;
+    margin: 10px;
+}
+
+/**************************/
+/* *******REGISTRO******* */
+/**************************/
+#formularioRegistro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#formularioRegistro ul {
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.623);
+    border: rgba(0, 0, 0, 0.733) 3px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    width: 350px;
+    border-radius: 20px;
+}
+
+#formularioRegistro li {
+    margin: 10px;
+    min-width: 310px;
+    max-width: 310px;
+    justify-content: center;
+    display: inline;
+}
+
+#formularioRegistro label {
+    float: left;
+}
+
+#formularioRegistro input {
+    float: right;
+    width: 200px;
+    height: 21px;
+}
+
+#formularioRegistro button {
+    cursor: pointer;
+    width: 90px;
+    height: 25px;
+    margin: 10px;
+}
+
+#formularioRegistro #check {
+    float: left;
+    width: 20px;
+}
+
+/**************************/
+/* *******TIENDAS******* */
+/**************************/
+.contenedorUbicacion {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.listaUbicacion {
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.623);
+    border: rgba(0, 0, 0, 0.733) 3px solid;
+    width: 300px;
+    list-style: none;
+    margin: 5px;
+    padding: 20px;
+}
+
+/************************/
+/* *******FOOTER******* */
+/************************/
+#footer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+    padding-bottom: 50px;
+}
+
+#contenido {
+    align-content: center;
+    padding: 0;
+    margin: 20px;
+}
+
+#contenido tr th {
+    width: 200px;
+    height: 40px;
+}
+
+#contenido li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+/************************/
+/* *******ERROR******* */
+/************************/
+.contenedorError {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.contenedorError img {
+    width: 100%;
+    opacity: 0.8;
+}
+
+.contenedorError div {
+    color: black;
+    font-size: 214%;
+    font-weight: bolder;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/************************/
+/* *******PASTELERO******* */
+/************************/
+#infoPedido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#infoPedido tr{
+    background-color: rgba(0, 0, 0, 0.623);
+}
+#infoPedido button{
+    cursor: pointer;
+}
+#tablaRecursos{
+    min-height: 60px;
+    width: 50%;
+    margin-bottom: 5%;
+    border-radius: 20px;
+    border: rgba(0, 0, 0, 0.733) 3px solid;
+    background-color: rgba(0, 0, 0, 0.623);
+}
+#tablaPeticiones{
+    min-height: 60px;
+    margin-bottom: 5%;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.623);
+    border: rgba(0, 0, 0, 0.733) 3px solid;
+    border-radius: 20px;
+}
+#tablaPedido{
+    min-height: 60px;
+    width: 50%;
+    margin-bottom: 5%;
+    background-color: rgba(0, 0, 0, 0.623);
+    border: rgba(0, 0, 0, 0.733) 3px solid;
+    border-radius: 20px;
+}
+#tablaPedido li{
+    list-style: none;
+}
