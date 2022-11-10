@@ -290,6 +290,7 @@ body {
 /********************************/
 #cover {
     position: absolute;
+    margin-right: 285px;
 }
 
 #coverCut {
