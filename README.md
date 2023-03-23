@@ -1,6 +1,6 @@
 # Proyectos Web
 
-## Pasteleria [(Link)](https://luis-pedroza.github.io/Web_Projects/pasteleria/index.html)
+## Pasteleria [(Link)](https://luis-pedroza.github.io/Proyectos_Web/pasteleria/index.html)
 <a href="https://luis-pedroza.github.io/Proyectos_Web/pasteleria/index.html" target="_blank"> <img src="./pasteleria.png" width="200" height="200"/></a> 
 
 ## Pokedex [(Link)](https://luis-pedroza.github.io/Proyectos_Web/pokedex/index.html)
