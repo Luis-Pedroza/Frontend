@@ -1,0 +1,17 @@
+{
+    "name": "PokedexPWA",
+    "short_name": "PokedexPWA",
+    "start_url": "./",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#4285f4",
+    "icons": [
+      {
+        "src": "./pokeball.webp",
+        "type": "image/webp",
+        "sizes": "800x799",
+        "purpose": "any maskable"
+      }
+    ]
+  }
+  
