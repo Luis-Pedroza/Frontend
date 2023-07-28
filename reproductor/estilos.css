@@ -4,6 +4,10 @@
 body{
     margin: 0;
     background-image: linear-gradient(to right bottom, #9ad5ca, #74aea2, #4f887c, #2b6458, #004236);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 96vh;
 }
 header{
     text-align: center
